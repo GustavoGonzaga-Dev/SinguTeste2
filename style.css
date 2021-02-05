@@ -1,0 +1,176 @@
+
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .links {
+            width: 100%;
+            height: 50px;
+            position: fixed;
+            display: flex;
+        }
+
+        .links label {
+            padding: 10px 0;
+            flex-grow: 1;
+            cursor: pointer;
+            transition: all .4s;
+            text-align: center;
+            font-family: 'Arial';
+            font-size: 100%;
+            color: #fff;
+        }
+
+        .links label:hover {
+            background-color: rgba(255, 255, 255, .2);
+        }
+
+        .scroll input {
+            display: none;
+        }
+
+        .bloco {
+            width: 100vw;
+            height: 100vh;
+            justify-content: center;
+            align-items: center;
+            display: flex;
+        }
+
+        #ex1 {
+            background-color: blueviolet;
+        }
+
+        #ex2 {
+            background-color: brown;
+        }
+
+        #ex3 {
+            background-color: rgb(52, 165, 42);
+        }
+
+        #ex4 {
+            background-color: rgb(85, 42, 165);
+        }
+
+        #ex5 {
+            background-color: rgb(165, 163, 42);
+        }
+
+        #ex6 {
+            background-color: rgb(165, 42, 134);
+        }
+
+        #ex7 {
+            background-color: rgb(165, 97, 42);
+        }
+
+        #ex8 {
+            background-color: rgb(160, 153, 153);
+        }
+
+        #ex9 {
+            background-color: rgb(34, 33, 33);
+        }
+
+        #ex10 {
+            background-color: rgb(42, 130, 165);
+        }
+
+        #ex11 {
+            background-color: rgb(240, 147, 155);
+        }
+
+        #ex12 {
+            background-color: rgb(172, 161, 219);
+        }
+
+        .scroll {
+            display: flex;
+            width: 100vw;
+            height: 100vh;
+            overflow: hidden;
+        }
+
+        .sections {
+            transition: all .4s;
+        }
+
+        #rd_ex2:checked~.sections {
+            margin-top: -100vh;
+        }
+
+        #rd_ex3:checked~.sections {
+            margin-top: -200vh;
+        }
+
+        #rd_ex4:checked~.sections {
+            margin-top: -300vh;
+        }
+
+        #rd_ex5:checked~.sections {
+            margin-top: -400vh;
+        }
+
+        #rd_ex6:checked~.sections {
+            margin-top: -500vh;
+        }
+
+        #rd_ex7:checked~.sections {
+            margin-top: -600vh;
+        }
+
+        #rd_ex8:checked~.sections {
+            margin-top: -700vh;
+        }
+
+        #rd_ex9:checked~.sections {
+            margin-top: -800vh;
+        }
+
+        #rd_ex10:checked~.sections {
+            margin-top: -900vh;
+        }
+
+        #rd_ex11:checked~.sections {
+            margin-top: -1000vh;
+        }
+
+        #rd_ex12:checked~.sections {
+            margin-top: -1100vh;
+        }
+
+
+        .bloco btn1 {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        .bloco btn2 {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        .bloco btn {
+            background-color: darkgray;
+            color: black;
+            width: 150px;
+            height: 40px;
+            border: 3px;
+            border-radius: 15px;
+        }
+
+        .btn:hover {
+            background-color: rgb(63, 62, 62);
+            color: white;
+            width: 150px;
+            height: 40px;
+            border: 3px;
+            border-radius: 15px;
+            cursor: pointer;
+        }
