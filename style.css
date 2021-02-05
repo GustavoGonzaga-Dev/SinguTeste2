@@ -23,7 +23,7 @@
         }
 
         .links label:hover {
-            background-color: rgba(255, 255, 255, .2);
+            background-color: rgba(68, 15, 211, 0.2);
         }
 
         .scroll input {
@@ -39,51 +39,51 @@
         }
 
         #ex1 {
-            background-color: blueviolet;
+            background-color: #686868;
         }
 
         #ex2 {
-            background-color: brown;
+            background-color: #707070;
         }
 
         #ex3 {
-            background-color: rgb(52, 165, 42);
+            background-color: #787878;
         }
 
         #ex4 {
-            background-color: rgb(85, 42, 165);
+            background-color: #808080;
         }
 
         #ex5 {
-            background-color: rgb(165, 163, 42);
+            background-color: #888888;
         }
 
         #ex6 {
-            background-color: rgb(165, 42, 134);
+            background-color: #909090;
         }
 
         #ex7 {
-            background-color: rgb(165, 97, 42);
+            background-color: #969696;
         }
 
         #ex8 {
-            background-color: rgb(160, 153, 153);
+            background-color: #949494;
         }
 
         #ex9 {
-            background-color: rgb(34, 33, 33);
+            background-color: #989898;
         }
 
         #ex10 {
-            background-color: rgb(42, 130, 165);
+            background-color: #a9a9a9;
         }
 
         #ex11 {
-            background-color: rgb(240, 147, 155);
+            background-color: #bdbebd;
         }
 
         #ex12 {
-            background-color: rgb(172, 161, 219);
+            background-color: #d3d3d3;
         }
 
         .scroll {
