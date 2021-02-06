@@ -25,31 +25,35 @@
     </nav>
 
     <div class="scroll">
-        <input type="radio" name="grupo" id="rd_ex1" checked="true">
-        <input type="radio" name="grupo" id="rd_ex2">
-        <input type="radio" name="grupo" id="rd_ex3">
-        <input type="radio" name="grupo" id="rd_ex4">
-        <input type="radio" name="grupo" id="rd_ex5">
-        <input type="radio" name="grupo" id="rd_ex6">
-        <input type="radio" name="grupo" id="rd_ex7">
-        <input type="radio" name="grupo" id="rd_ex8">
-        <input type="radio" name="grupo" id="rd_ex9">
-        <input type="radio" name="grupo" id="rd_ex10">
-        <input type="radio" name="grupo" id="rd_ex11">
-        <input type="radio" name="grupo" id="rd_ex12">
+        <input class="radio" type="radio" name="grupo" id="rd_ex1" checked="true">
+        <input class="radio" type="radio" name="grupo" id="rd_ex2">
+        <input class="radio" type="radio" name="grupo" id="rd_ex3">
+        <input class="radio" type="radio" name="grupo" id="rd_ex4">
+        <input class="radio" type="radio" name="grupo" id="rd_ex5">
+        <input class="radio" type="radio" name="grupo" id="rd_ex6">
+        <input class="radio" type="radio" name="grupo" id="rd_ex7">
+        <input class="radio" type="radio" name="grupo" id="rd_ex8">
+        <input class="radio" type="radio" name="grupo" id="rd_ex9">
+        <input class="radio" type="radio" name="grupo" id="rd_ex10">
+        <input class="radio" type="radio" name="grupo" id="rd_ex11">
+        <input class="radio" type="radio" name="grupo" id="rd_ex12">
 
         <section class="sections">
             <section class="bloco" id="ex1">
-                <div id="form">
-                    <label for="f1">Primeira frase:</label><br>
-                    <input type="text" placeholder="insira aqui a frase" id="f1" name="f1"><br>
 
-                    <label for="f2">Segunda frase:</label><br>
-                    <input type="text" placeholder="insira aqui a frase" id="f2" name="f2">
+                <div id="lblP1">
+                    <label class="lbl1" for="f1">Primeira frase:</label><br>
+                    <input class="form" type="text" placeholder="insira aqui a frase" id="f1" name="f1"><br>
                 </div>
+                <div id="lblP2">
+                    <label class="lbl2" for="f2">Segunda frase:</label><br>
+                    <input class="form" type="text" placeholder="insira aqui a frase" id="f2" name="f2">
+                </div>
+
                 <div id="btn1">
-                    <button class="btn" type="button" name="btn1" onclick="EX1();">Play</button>
+                    <button class="btn" type="button" name="btn1" onclick="EX1(f1.value, f2.value);">Play</button>
                 </div>
+
             </section>
             <section class="bloco" id="ex2">
                 <div id="btn2">

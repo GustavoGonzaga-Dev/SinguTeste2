@@ -1,11 +1,13 @@
-function EX1() {
+function EX1(f1, f2) {
     var frase1= "Um mago não se atrasa, Frodo Bolseiro. Nem se adianta. Ele chega exatamente quando pretende chegar.";
     var frase2= "Não tenha pena dos mortos, Harry. Tenha pena dos vivos, e acima de tudo, daqueles que vivem sem amor.";
+    var texto1 = document.getElementById("f1");
+    var texto2 = document.getElementById("f2");
     var maior;
-    if(frase1.length > frase2.length){
-        maior = frase1
+    if(texto1.length > texto2.length){
+        maior = texto1
     }else{
-        maior = frase2
+        maior = texto2
     }
     alert(''+ maior)
 }
