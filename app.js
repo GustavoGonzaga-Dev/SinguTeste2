@@ -72,3 +72,10 @@ function EX3() {
     saida += " -- Idade: " + IdadeMae.value;
     alert('' + saida);
 }
+
+function EX4(){
+    var str = 'Olá 1, tudo bem 4 com você 6';
+    var resultado = str.replace(/[0-9]/g, "[removido]")
+
+    alert(resultado)
+}

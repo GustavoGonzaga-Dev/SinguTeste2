@@ -260,7 +260,7 @@
         }
 
         p{
-            padding-bottom: 300px;
-            position: absolute;
-            color: rgb(255, 255, 255);
+            color: white;
+            width: 250px;
+            padding-right: 50px
         }
