@@ -197,10 +197,49 @@
 
         .bloco lblP2{
             position: absolute;
-            padding-right: 20;
         }
 
         .lbl2{
+            font-family: 'Arial';
+            font-size: 100%;
+            color: rgb(255, 255, 255);
+        }
+
+        .bloco lblP3{
+            position: absolute;
+        }
+
+        .lbl3{
+            font-family: 'Arial';
+            font-size: 100%;
+            color: rgb(255, 255, 255);
+        }
+
+        .bloco lblP4{
+            position: absolute;
+        }
+
+        .lbl4{
+            font-family: 'Arial';
+            font-size: 100%;
+            color: rgb(255, 255, 255);
+        }
+
+        .bloco lblP5{
+            position: absolute;
+        }
+
+        .lbl5{
+            font-family: 'Arial';
+            font-size: 100%;
+            color: rgb(255, 255, 255);
+        }
+
+        .bloco lblP6{
+            position: absolute;
+        }
+
+        .lbl6{
             font-family: 'Arial';
             font-size: 100%;
             color: rgb(255, 255, 255);

@@ -48,21 +48,28 @@ function funcaoDoEx2(texto1, texto2, maior) {
 }
 
 function EX3() {
-    var seuNome = "Gustavo"
-    var NomePai = "Jose"
-    var NomeMae = "Maria"
-    var suaIdade = "20"
-    var IdadePai = "56"
-    var IdadeMae = "50"
+    var seuNome = "";
+    var NomePai = "";
+    var NomeMae = "";
+    var suaIdade = "";
+    var IdadePai = "";
+    var IdadeMae = "";
+
+    seuNome = document.querySelector("#SeuNome");
+    NomePai = document.querySelector("#NomePai");
+    NomeMae = document.querySelector("#NomeMae");
+    suaIdade = document.querySelector("#suaIdade");
+    IdadePai = document.querySelector("#IdadePai");
+    IdadeMae = document.querySelector("#IdadeMae");
 
     //validação se os campos estão vazios
 
-    var saida = seuNome;
-    saida += "\n" + NomePai;
-    saida += "\n" + NomeMae;
-    saida += "\n" + suaIdade;
-    saida += "\n" + IdadePai;
-    saida += "\n" + IdadeMae
+    var saida = seuNome.value;
+    saida += "\n" + NomePai.value;
+    saida += "\n" + NomeMae.value;
+    saida += "\n" + suaIdade.value;
+    saida += "\n" + IdadePai.value;
+    saida += "\n" + IdadeMae.value;
 
-    alert('' + saida)
+    alert('' + saida);
 }
