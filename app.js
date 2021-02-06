@@ -73,14 +73,14 @@ function EX3() {
     alert('' + saida);
 }
 
-function EX4(){
+function EX4() {
     var Frase = "Olá 1, tudo bem 4 com você 6";
     var resultado = Frase.replace(/[0-9]/g, "[removido]")
 
     alert(resultado)
 }
 
-function EX5(){
+function EX5() {
     var Frase = "N05 50M05 4 51NGU";
 
     Frase = Frase.replace(/[0]/g, "o")
