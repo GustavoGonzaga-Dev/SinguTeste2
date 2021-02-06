@@ -74,8 +74,20 @@ function EX3() {
 }
 
 function EX4(){
-    var str = 'Olá 1, tudo bem 4 com você 6';
-    var resultado = str.replace(/[0-9]/g, "[removido]")
+    var Frase = "Olá 1, tudo bem 4 com você 6";
+    var resultado = Frase.replace(/[0-9]/g, "[removido]")
 
     alert(resultado)
+}
+
+function EX5(){
+    var Frase = "N05 50M05 4 51NGU";
+
+    Frase = Frase.replace(/[0]/g, "o")
+    Frase = Frase.replace(/[4]/g, "a")
+    Frase = Frase.replace(/[1]/g, "i")
+    Frase = Frase.replace(/[5]/g, "s")
+
+    Frase = Frase.toUpperCase();
+    alert(Frase)
 }
