@@ -1,41 +1,59 @@
-function EX1(f1, f2) {
-    var frase1= "Um mago não se atrasa, Frodo Bolseiro. Nem se adianta. Ele chega exatamente quando pretende chegar.";
-    var frase2= "Não tenha pena dos mortos, Harry. Tenha pena dos vivos, e acima de tudo, daqueles que vivem sem amor.";
-    var texto1 = document.getElementById("f1");
-    var texto2 = document.getElementById("f2");
-    var maior;
-    if(texto1.length > texto2.length){
-        maior = texto1
-    }else{
-        maior = texto2
+function EX1() {
+    var texto1 = "";
+    texto1 = document.querySelector("#f1");
+    var texto2 = "";
+    texto2 = document.querySelector("#f2");
+
+    if (texto1.value == "" || texto2.value == "") {
+        alert('Preencha todos os campos desta seção');
+    } else {
+        if (texto1.value.length > texto2.value.length) {
+            alert('A frase maior é: \n' + texto1.value);
+        } else if (texto1.value.length < texto2.value.length) {
+            alert('A frase maior é: \n' + texto2.value);
+        } else if (texto1.value.length == texto2.value.length) {
+            alert('As duas frases tem o mesmo tamanho');
+        }
     }
-    alert(''+ maior)
 }
 
-function EX2() {
-    var frase1= "Um mago não se atrasa, Frodo Bolseiro. Nem se adianta. Ele chega exatamente quando pretende chegar.";
-    var frase2= "I'm going to make him an offer he can't refuse.";
-    var maior;
-    maior = funcao2(frase1, frase2, maior)
-    alert(''+ maior)
+function EX2() {  //esse aqui eu não entendi muito bem o que era pra ser feito, então ta aqui o que eu achei o certo :3 s2
+    var igual = "60df@t43r2";
+    var texto1 = "";
+    texto1 = document.querySelector("#f3");
+    var texto2 = "";
+    texto2 = document.querySelector("#f4");
+    var maior = "";
+    if (texto1.value == "" || texto2.value == "") {
+        alert('Preencha todos os campos desta seção!');
+    } else {
+        maior = funcaoDoEx2(texto1, texto2, maior)
+        if (maior.value == igual.value) {
+            alert('As duas frases tem o mesmo tamanho');
+        } else {
+            alert('A frase maior é: \n' + maior.value);
+        }
+    }
 }
 
-function funcao2(frase1, frase2, maior){
-    if(frase1.length > frase2.length){
-        maior = frase1
-    }else{
-        maior = frase2
+function funcaoDoEx2(texto1, texto2, maior) {
+    if (texto1.value.length > texto2.value.length) {
+        maior = texto1;
+    } else if (texto1.value.length < texto2.value.length) {
+        maior = texto2;
+    } else if (texto1.value.length == texto2.value.length) {
+        maior = "60df@t43r2";
     }
     return maior;
 }
 
-function EX3(){
-    var seuNome="Gustavo"
-    var NomePai="Jose"
-    var NomeMae="Maria"
-    var suaIdade="20"
-    var IdadePai="56"
-    var IdadeMae="50"
+function EX3() {
+    var seuNome = "Gustavo"
+    var NomePai = "Jose"
+    var NomeMae = "Maria"
+    var suaIdade = "20"
+    var IdadePai = "56"
+    var IdadeMae = "50"
 
     //validação se os campos estão vazios
 

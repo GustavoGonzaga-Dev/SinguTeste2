@@ -6,6 +6,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home</title>
+    <link rel="icon" href="img/icon.png">
 </head>
 
 <body>
@@ -39,8 +40,8 @@
         <input class="radio" type="radio" name="grupo" id="rd_ex12">
 
         <section class="sections">
-            <section class="bloco" id="ex1">
 
+            <section class="bloco" id="ex1">
                 <div id="lblP1">
                     <label class="lbl1" for="f1">Primeira frase:</label><br>
                     <input class="form" type="text" placeholder="insira aqui a frase" id="f1" name="f1"><br>
@@ -49,22 +50,41 @@
                     <label class="lbl2" for="f2">Segunda frase:</label><br>
                     <input class="form" type="text" placeholder="insira aqui a frase" id="f2" name="f2">
                 </div>
-
                 <div id="btn1">
-                    <button class="btn" type="button" name="btn1" onclick="EX1(f1.value, f2.value);">Play</button>
+                    <button class="btn" type="button" name="btn1" onclick="EX1();">Play</button>
                 </div>
-
             </section>
+
             <section class="bloco" id="ex2">
+                <div id="lblP1">
+                    <label class="lbl1" for="f3">Primeira frase:</label><br>
+                    <input class="form" type="text" placeholder="insira aqui a frase" id="f3" name="f3"><br>
+                </div>
+                <div id="lblP2">
+                    <label class="lbl2" for="f4">Segunda frase:</label><br>
+                    <input class="form" type="text" placeholder="insira aqui a frase" id="f4" name="f4">
+                </div>
                 <div id="btn2">
                     <button class="btn" type="button" name="btn2" onclick="EX2();">Play</button>
                 </div>
             </section>
+
             <section class="bloco" id="ex3">
+                <div id="lblP1">
+                    <label class="lbl1" for="SeuNome">Seu nome:</label><br>
+                    <input class="form" type="text" placeholder="insira aqui Seu Nome" id="SeuNome" name="SeuNome"><br>
+                </div>
+                <div id="lblP2">
+                    <label class="lbl2" for="NomePai">Nome do Pai:</label><br>
+                    <input class="form" type="text" placeholder="insira aqui o Nome do Pai" id="NomePai"
+                        name="NomePai"><br>
+                </div>
+
                 <div id="btn2">
                     <button class="btn" type="button" name="btn3" onclick="EX3();">Play</button>
                 </div>
             </section>
+
             <section class="bloco" id="ex4"></section>
             <section class="bloco" id="ex5"></section>
             <section class="bloco" id="ex6"></section>
