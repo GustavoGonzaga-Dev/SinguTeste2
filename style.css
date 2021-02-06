@@ -156,7 +156,14 @@
             transform: translate(-50%, -50%);
         }
 
-        .bloco btn {
+        .bloco btn3 {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        .btn {
             background-color: darkgray;
             color: black;
             width: 150px;
@@ -173,4 +180,20 @@
             border: 3px;
             border-radius: 15px;
             cursor: pointer;
+        }
+
+        #form{
+            position: fixed;
+            top: 45%;
+            left: 15%;
+            font-family: 'Arial';
+            font-size: 100%;
+            color: rgb(255, 255, 255);
+        }
+
+        input[type= text]{
+            width: 22%;
+            border:2px solid #d3d3d3;
+            border-radius: 4px;
+            margin: 8px 0;
         }
