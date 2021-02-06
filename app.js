@@ -65,11 +65,10 @@ function EX3() {
     //validação se os campos estão vazios
 
     var saida = seuNome.value;
-    saida += "\n" + NomePai.value;
-    saida += "\n" + NomeMae.value;
-    saida += "\n" + suaIdade.value;
-    saida += "\n" + IdadePai.value;
-    saida += "\n" + IdadeMae.value;
-
+    saida += " -- Idade: " + suaIdade.value + "\n";
+    saida += "" + NomePai.value;
+    saida += " -- Idade: " + IdadePai.value + "\n";
+    saida += "" + NomeMae.value;
+    saida += " -- Idade: " + IdadeMae.value;
     alert('' + saida);
 }
