@@ -136,9 +136,11 @@ function EX7() {
 
 function EX8() {
     var idadeMedia = 0;
+    var idSOMA = 0;
     for (var i = 0; i < lista.length; i++) {
-        idadeMedia = idadeMedia + lista[i].idade;
+        idadeMedia = idadeMedia + (lista[i].idade * lista[i].id);
+        idSOMA = idSOMA + lista[i].id;
     }
-    idadeMedia = idadeMedia / lista.length;
-    alert("A média ponderada das idades é: " + idadeMedia.value);
+    idadeMedia = idadeMedia / idSOMA;
+    alert("A média ponderada das idades é: " + idadeMedia + " anos.");
 }
