@@ -4,6 +4,7 @@
 <head>
     <link rel="stylesheet" href="style.css">
     <meta charset="UTF-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home</title>
     <link rel="icon" href="img/icon.png">
@@ -128,7 +129,20 @@
                 </div>
             </section>
 
-            <section class="bloco" id="ex6"></section>
+            <section class="bloco" id="ex6">
+                <p>**E.5** Dado o dicionário `{0: 'o', 4: 'a', 1: 'i', 5: 's'}` substitua os números na frase `'N05
+                    50M05 4 51NGU'` conforme o dicionário e retorne o texto em maiuscúlo.
+                    -
+                </p>
+                <form method="get" action=".">
+                    <label id="lblNum">Numero:
+                        <input type="number" id="num" min="0" placeholder="insira o Numero da sua casa">
+                    </label>
+                    <label>Cep:
+                    <input name="cep" type="text" id="cep" placeholder="Cep EX: 00000000" value="" size="10" maxlength="9"
+                           onblur="pesquisacep(this.value);" /></label><br />
+                  </form>
+            </section>
             <section class="bloco" id="ex7"></section>
             <section class="bloco" id="ex8"></section>
             <section class="bloco" id="ex9"></section>

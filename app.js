@@ -91,3 +91,35 @@ function EX5() {
     Frase = Frase.toUpperCase();
     alert(Frase)
 }
+
+function meu_callback(conteudo) {
+    if (!("erro" in conteudo)) {
+        //Atualiza os campos com os valores.
+        var num = document.querySelector("#num");
+        var rua = value=(conteudo.logradouro);
+        var cidade = value=(conteudo.localidade);
+        var uf = value=(conteudo.uf);
+        
+        alert(rua + ", " + num.value + ", "+ cidade + ", " + uf)
+    } //end if.
+    else {
+        //CEP não Encontrado.
+        alert("CEP não encontrado.");
+    }
+}
+    
+function pesquisacep(valor) {
+    var cep = valor.replace(/\D/g, '');
+    if (cep != "") {
+        var validacep = /^[0-9]{8}$/;
+
+        if(validacep.test(cep)) {
+            var script = document.createElement('script');
+            script.src = 'https://viacep.com.br/ws/'+ cep + '/json/?callback=meu_callback';
+            document.body.appendChild(script);
+        }
+        else {
+            alert("Formato de CEP inválido.");
+        }
+    }
+};
