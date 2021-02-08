@@ -62,7 +62,7 @@ function EX3() {
     IdadePai = document.querySelector("#IdadePai");
     IdadeMae = document.querySelector("#IdadeMae");
 
-    //validação se os campos estão vazios
+    //falta validação se os campos estão vazios no próprio input
 
     var saida = seuNome.value;
     saida += " -- Idade: " + suaIdade.value + "\n";
@@ -94,32 +94,41 @@ function EX5() {
 
 function meu_callback(conteudo) {
     if (!("erro" in conteudo)) {
-        //Atualiza os campos com os valores.
         var num = document.querySelector("#num");
-        var rua = value=(conteudo.logradouro);
-        var cidade = value=(conteudo.localidade);
-        var uf = value=(conteudo.uf);
-        
-        alert(rua + ", " + num.value + ", "+ cidade + ", " + uf)
-    } //end if.
+        var rua = value = (conteudo.logradouro);
+        var cidade = value = (conteudo.localidade);
+        var uf = value = (conteudo.uf);
+
+        alert(rua + ", " + num.value + ", " + cidade + ", " + uf)
+    }
     else {
-        //CEP não Encontrado.
         alert("CEP não encontrado.");
     }
 }
-    
+
 function pesquisacep(valor) {
     var cep = valor.replace(/\D/g, '');
     if (cep != "") {
         var validacep = /^[0-9]{8}$/;
-
-        if(validacep.test(cep)) {
+        if (validacep.test(cep)) {
             var script = document.createElement('script');
-            script.src = 'https://viacep.com.br/ws/'+ cep + '/json/?callback=meu_callback';
+            script.src = 'https://viacep.com.br/ws/' + cep + '/json/?callback=meu_callback';
             document.body.appendChild(script);
         }
         else {
             alert("Formato de CEP inválido.");
         }
     }
-};
+}
+
+function EX7() {
+    var lista = [
+        { id: 1, nome: 'Eduardo', sobrenome: 'Aparecido', idade: 16 },
+        { id: 2, nome: 'Luis', sobrenome: 'Inácio', idade: 70 },
+        { id: 3, nome: 'Alberto', sobrenome: 'Roberto', idade: 28 },
+        { id: 4, nome: 'Monica', sobrenome: 'de Leão', idade: 21 }
+    ]
+    for (var i = 0; i < lista.length; i++) {
+        alert("Olá, " + lista[i].nome + " " + lista[i].sobrenome + "!");
+    }
+}

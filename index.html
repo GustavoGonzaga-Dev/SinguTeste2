@@ -130,20 +130,39 @@
             </section>
 
             <section class="bloco" id="ex6">
-                <p>**E.5** Dado o dicionário `{0: 'o', 4: 'a', 1: 'i', 5: 's'}` substitua os números na frase `'N05
-                    50M05 4 51NGU'` conforme o dicionário e retorne o texto em maiuscúlo.
-                    -
+                <p>**E.6** Utilizando a api da viacep (https://viacep.com.br/) e o seu cep como entrada imprima o seu
+                    endereço no formato `'ENDERECO, NUMERO, CIDADE/ESTADO'`.
                 </p>
                 <form method="get" action=".">
                     <label id="lblNum">Numero:
                         <input type="number" id="num" min="0" placeholder="insira o Numero da sua casa">
                     </label>
                     <label>Cep:
-                    <input name="cep" type="text" id="cep" placeholder="Cep EX: 00000000" value="" size="10" maxlength="9"
-                           onblur="pesquisacep(this.value);" /></label><br />
-                  </form>
+                        <input name="cep" type="text" id="cep" placeholder="Cep EX: 00000000" value="" size="10"
+                            maxlength="9" onblur="pesquisacep(this.value);" /></label><br />
+                </form>
             </section>
-            <section class="bloco" id="ex7"></section>
+
+            <section class="bloco" id="ex7">
+                <div>
+                    <p>**Para os seguintes exercícios** considere o array de objetos:
+                    </p><br><br>
+                    <p>[
+                        {id: 1, nome: 'Eduardo', sobrenome: 'Aparecido', idade: 16},
+                        {id: 2, nome: 'Luis', sobrenome: 'Inácio', idade: 70},
+                        {id:3, nome: 'Alberto', sobrenome: 'Roberto', idade: 28},
+                        {id: 4, nome: 'Monica', sobrenome: 'de Leão', idade: 21}
+                        ]
+                    </p><br><br>
+                    <p>**E.7** Imprima uma mensagem de saudação com o nome completo para cada um dos objetos. O nome
+                        deve ter a primeira letra maiúscula.
+                    </p>
+                </div>
+                <div id="btn5">
+                    <button class="btn" type="button" name="btn2" onclick="EX7();">Play</button>
+                </div>
+            </section>
+
             <section class="bloco" id="ex8"></section>
             <section class="bloco" id="ex9"></section>
             <section class="bloco" id="ex10"></section>
