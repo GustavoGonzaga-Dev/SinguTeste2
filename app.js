@@ -1,3 +1,10 @@
+var lista = [
+    { id: 1, nome: 'Eduardo', sobrenome: 'Aparecido', idade: 16 },
+    { id: 2, nome: 'Luis', sobrenome: 'Inácio', idade: 70 },
+    { id: 3, nome: 'Alberto', sobrenome: 'Roberto', idade: 28 },
+    { id: 4, nome: 'Monica', sobrenome: 'de Leão', idade: 21 }
+]
+
 function EX1() {
     var texto1 = "";
     texto1 = document.querySelector("#f1");
@@ -122,13 +129,16 @@ function pesquisacep(valor) {
 }
 
 function EX7() {
-    var lista = [
-        { id: 1, nome: 'Eduardo', sobrenome: 'Aparecido', idade: 16 },
-        { id: 2, nome: 'Luis', sobrenome: 'Inácio', idade: 70 },
-        { id: 3, nome: 'Alberto', sobrenome: 'Roberto', idade: 28 },
-        { id: 4, nome: 'Monica', sobrenome: 'de Leão', idade: 21 }
-    ]
     for (var i = 0; i < lista.length; i++) {
         alert("Olá, " + lista[i].nome + " " + lista[i].sobrenome + "!");
     }
+}
+
+function EX8() {
+    var idadeMedia = 0;
+    for (var i = 0; i < lista.length; i++) {
+        idadeMedia = idadeMedia + lista[i].idade;
+    }
+    idadeMedia = idadeMedia / lista.length;
+    alert("A média ponderada das idades é: " + idadeMedia.value);
 }
