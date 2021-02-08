@@ -144,3 +144,11 @@ function EX8() {
     idadeMedia = idadeMedia / idSOMA;
     alert("A média ponderada das idades é: " + idadeMedia + " anos.");
 }
+
+function EX9() {
+    for (var i = 0; i < lista.length; i++) {
+        if(lista[i].idade < 60){
+            alert("Id: " + lista[i].id + ", Nome: " + lista[i].nome + " " + lista[i].sobrenome + ", Idade: " + lista[i].idade);
+        }
+    }
+}
