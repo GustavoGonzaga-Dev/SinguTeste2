@@ -38,6 +38,7 @@ function EX2() {  //esse aqui eu não entendi muito bem o que era pra ser feito,
         if (maior.value == igual.value) {
             alert('As duas frases tem o mesmo tamanho');
         } else {
+            maior = maior.toUpperCase();
             alert('A frase maior é: \n' + maior.value);
         }
     }
