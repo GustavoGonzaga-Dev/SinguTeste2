@@ -147,25 +147,37 @@ function EX8() {
 
 function EX9() {
     var tudo = "";
-    var verifica = false; 
+    var verifica = false;
     var i = 0;
-    do{
-        if(lista[i].idade < 60){
-            for(var j = 0; j < lista.length; j++){
-            tudo += "Id: " + lista[j].id + ", Nome: " + lista[j].nome + " " + lista[j].sobrenome + ", Idade: " + lista[j].idade + "\n";
+    do {
+        if (lista[i].idade < 60) {
+            for (var j = 0; j < lista.length; j++) {
+                tudo += "Id: " + lista[j].id + ", Nome: " + lista[j].nome + " " + lista[j].sobrenome + ", Idade: " + lista[j].idade + "\n";
             }
             verifica = true;
-        }else{
+        } else {
             i++;
         }
-    }while(verifica != true || i == lista.length)
-        alert(tudo);
+    } while (verifica != true || i == lista.length)
+    alert(tudo);
 }
 
 function EX10() {
     for (var i = 0; i < lista.length; i++) {
-        if(lista[i].idade < 30){
+        if (lista[i].idade < 30) {
             alert("Id: " + lista[i].id + ", Nome: " + lista[i].nome + " " + lista[i].sobrenome + ", Idade: " + lista[i].idade);
         }
     }
+}
+
+function EX11() {
+    var tudo = "";
+    lista.sort(function(a,b) {
+        if(b.idade < a.idade) return -1;
+        if(b.idade > a.idade) return 1;
+    });
+    for (var i = 0; i < lista.length; i++) {
+        tudo += "Id: " + lista[i].id + ", Nome: " + lista[i].nome + " " + lista[i].sobrenome + ", Idade: " + lista[i].idade + "\n";
+   }
+    alert(tudo);
 }
