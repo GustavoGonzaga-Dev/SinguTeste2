@@ -85,10 +85,6 @@
             background-color: #949494;
         }
 
-        #ex12 {
-            background-color: #949494;
-        }
-
         .scroll {
             display: flex;
             width: 100vw;
@@ -139,11 +135,6 @@
         #rd_ex11:checked~.sections {
             margin-top: -1000vh;
         }
-
-        #rd_ex12:checked~.sections {
-            margin-top: -1100vh;
-        }
-
 
         .bloco btn1 {
             position: absolute;
