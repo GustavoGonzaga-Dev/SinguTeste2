@@ -1,5 +1,6 @@
 # SinguTeste2
-
+#Link de acesso
+https://gustavogonzaga-dev.github.io/SinguTeste2/
 ## instruções:
 
 - Para testar os exercícios, basta abrir o arquivo "index.html" no seu navegador.
